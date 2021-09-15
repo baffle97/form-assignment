@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>To The New</h1>
+      <div class="nav-link">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Quick Help</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <form>
+        <div class="form-head">
+          <h1>Bug Report</h1>
+        </div>
+        <div class="form-body">
+          <div>
+            <label for="title">Title</label><br />
+            <input class="width" id="title" type="text" />
+          </div>
+          <div>
+            <label for="description">Description</label><br />
+            <textarea
+              class="width"
+              name="description"
+              id="description"
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="op_sys"> Operating Systems</label><br />
+            <select class="width" name="op_sys" id="op_sys">
+              <option value="Windows">Windows</option>
+              <option value="MacOs">MacOS</option>
+              <option value="Linux">Linux</option>
+            </select>
+          </div>
+          <div>
+            <label for="product">Products</label><br />
+            <select class="width" name="product" id="product">
+              <option value="laptop">Laptop</option>
+              <option value="pc">PC</option>
+              <option value="mobile">Phone</option>
+            </select>
+          </div>
+          <div>
+            <label for="version">Versions</label><br />
+            <input id="version" type="text" />
+          </div>
+          <div>
+            <p>License:</p>
+            <span class="radio">
+              <span>
+                <label for="free">Free</label>
+                <input id="free" type="radio" value="free" name="license" />
+              </span>
+              <span>
+                <label for="buisness">Buisness</label>
+                <input
+                  id="buisness"
+                  type="radio"
+                  value="buisness"
+                  name="license"
+                />
+              </span>
+            </span>
+          </div>
+          <div>
+            <label for="severity">Severity</label><br />
+            <select class="width" name="severity" id="severity">
+              <option value="critical">Critical</option>
+              <option value="moderate">moderate</option>
+              <option value="low risk">Low Risk</option>
+            </select>
+          </div>
+          <div>
+            <label for="attachments">Attachments:</label><br />
+            <input id="attachments" class="width" type="file" />
+          </div>
+        </div>
+        <div class="form-footer">
+          <input id="submit" type="submit" name="Submit" value="Send" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
